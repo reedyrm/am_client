@@ -1,0 +1,17 @@
+c:\users\gianni\documents\visual studio 2012\Projects\AM_Client\AM_Client\bin\Debug\AM_Client.exe.config
+c:\users\gianni\documents\visual studio 2012\Projects\AM_Client\AM_Client\bin\Debug\AM_Client.exe
+c:\users\gianni\documents\visual studio 2012\Projects\AM_Client\AM_Client\bin\Debug\AM_Client.pdb
+c:\users\gianni\documents\visual studio 2012\Projects\AM_Client\AM_Client\obj\Debug\AM_Client.csprojResolveAssemblyReference.cache
+c:\users\gianni\documents\visual studio 2012\Projects\AM_Client\AM_Client\obj\Debug\MainWindow.baml
+c:\users\gianni\documents\visual studio 2012\Projects\AM_Client\AM_Client\obj\Debug\MainWindow.g.cs
+c:\users\gianni\documents\visual studio 2012\Projects\AM_Client\AM_Client\obj\Debug\App.g.cs
+c:\users\gianni\documents\visual studio 2012\Projects\AM_Client\AM_Client\obj\Debug\AM_Client_MarkupCompile.cache
+c:\users\gianni\documents\visual studio 2012\Projects\AM_Client\AM_Client\obj\Debug\AM_Client.g.resources
+c:\users\gianni\documents\visual studio 2012\Projects\AM_Client\AM_Client\obj\Debug\AM_Client.Properties.Resources.resources
+c:\users\gianni\documents\visual studio 2012\Projects\AM_Client\AM_Client\obj\Debug\AM_Client.csproj.GenerateResource.Cache
+c:\users\gianni\documents\visual studio 2012\Projects\AM_Client\AM_Client\obj\Debug\AM_Client.exe
+c:\users\gianni\documents\visual studio 2012\Projects\AM_Client\AM_Client\obj\Debug\AM_Client.pdb
+c:\users\gianni\documents\visual studio 2012\Projects\AM_Client\AM_Client\obj\Debug\Pages\Dashboard.baml
+c:\users\gianni\documents\visual studio 2012\Projects\AM_Client\AM_Client\obj\Debug\Pages\Login.baml
+c:\users\gianni\documents\visual studio 2012\Projects\AM_Client\AM_Client\obj\Debug\Pages\Dashboard.g.cs
+c:\users\gianni\documents\visual studio 2012\Projects\AM_Client\AM_Client\obj\Debug\Pages\Login.g.cs
