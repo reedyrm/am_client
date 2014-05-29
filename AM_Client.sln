@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AM_Client", "AM_Client\AM_Client.csproj", "{75B45603-FF0A-41CE-8415-F6E76E69915C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AM_ClientTest", "AM_ClientTest\AM_ClientTest.csproj", "{9C2B7CA8-1E2C-48BF-AD11-F9B25B77B56C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{75B45603-FF0A-41CE-8415-F6E76E69915C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75B45603-FF0A-41CE-8415-F6E76E69915C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75B45603-FF0A-41CE-8415-F6E76E69915C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C2B7CA8-1E2C-48BF-AD11-F9B25B77B56C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C2B7CA8-1E2C-48BF-AD11-F9B25B77B56C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C2B7CA8-1E2C-48BF-AD11-F9B25B77B56C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C2B7CA8-1E2C-48BF-AD11-F9B25B77B56C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -8,10 +8,11 @@
 	Title="Login">
 
     <Grid>
-        <Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Left" Margin="197,190,0,0" VerticalAlignment="Top" Width="75" Click="btnLogin_Click"/>
-        <Label x:Name="lblUsername" Content="Username" HorizontalAlignment="Left" Margin="118,106,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.605,-0.269"/>
-        <Label x:Name="lblPassword" Content="Password" HorizontalAlignment="Left" Margin="121,143,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.605,-0.269"/>
-        <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Height="23" Margin="186,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="186,143,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Left" Margin="186,190,0,0" VerticalAlignment="Top" Width="76" Click="btnLogin_Click" IsDefault="true"/>
+        <Label x:Name="lblUsername" Content="Username" HorizontalAlignment="Left" Margin="121,106,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.605,-0.269"/>
+        <Label x:Name="lblPassword" Content="Password" HorizontalAlignment="Left" Margin="121,140,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.605,-0.269" Width="63" Height="26"/>
+        <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Height="22" Margin="186,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="txtUsername_TextChanged"/>
+        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="186,143,0,0" VerticalAlignment="Top" Width="120" PasswordChanged="txtPassword_PasswordChanged"/>
+        <Label x:Name="lblMessage" Margin="103,166,0,0" VerticalAlignment="Top" Foreground="Red" Height="24" HorizontalAlignment="Left" Width="270"/>
     </Grid>
 </Page>

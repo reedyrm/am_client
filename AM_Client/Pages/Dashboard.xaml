@@ -13,8 +13,10 @@
             <ColumnDefinition Width="436*"/>
         </Grid.ColumnDefinitions>
         <Menu Height="31" VerticalAlignment="Top" Margin="0,-59,0,0" Grid.ColumnSpan="2">
-            <MenuItem Header="File">
-                <MenuItem Header="Exit" HorizontalAlignment="Left" Width="145"/>
+            <MenuItem Header="File" Width="35">
+                <MenuItem x:Name="miChangePassword" Header="Change Password" Margin="0,0,-43,0" Click="miChangePassword_Click"/>
+                <Separator HorizontalAlignment="Left" Width="145"/>
+                <MenuItem x:Name="miExit" Header="Exit" HorizontalAlignment="Left" Width="145" Click="miExit_Click"/>
             </MenuItem>
             <MenuItem Header="About"/>
         </Menu>

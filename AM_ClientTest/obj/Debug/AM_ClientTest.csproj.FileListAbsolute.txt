@@ -1,0 +1,7 @@
+C:\Users\gianni\Documents\Visual Studio 2012\Projects\AM_Client\AM_ClientTest\bin\Debug\AM_ClientTest.dll
+C:\Users\gianni\Documents\Visual Studio 2012\Projects\AM_Client\AM_ClientTest\bin\Debug\AM_ClientTest.pdb
+C:\Users\gianni\Documents\Visual Studio 2012\Projects\AM_Client\AM_ClientTest\obj\Debug\AM_ClientTest.csprojResolveAssemblyReference.cache
+C:\Users\gianni\Documents\Visual Studio 2012\Projects\AM_Client\AM_ClientTest\obj\Debug\AM_ClientTest.dll
+C:\Users\gianni\Documents\Visual Studio 2012\Projects\AM_Client\AM_ClientTest\obj\Debug\AM_ClientTest.pdb
+C:\Users\gianni\Documents\Visual Studio 2012\Projects\AM_Client\AM_ClientTest\bin\Debug\AM_Client.exe
+C:\Users\gianni\Documents\Visual Studio 2012\Projects\AM_Client\AM_ClientTest\bin\Debug\AM_Client.pdb

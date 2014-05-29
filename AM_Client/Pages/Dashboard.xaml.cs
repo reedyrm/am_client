@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using AM_Client.Pages;
 
 namespace AM_Client
 {
@@ -26,9 +27,14 @@ namespace AM_Client
             InitializeComponent();
         }
 
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        private void miExit_Click(object sender, RoutedEventArgs e)
         {
-            //need to exit application
+            Application.Current.Shutdown();
+        }
+
+        private void miChangePassword_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GetNavigationService(this).Navigate(new ChangePassword());
         }
     }
 }

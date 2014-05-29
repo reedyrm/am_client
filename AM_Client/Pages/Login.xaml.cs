@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using AM_Client.AuthService;
 
 namespace AM_Client.Pages
 {
@@ -24,7 +25,6 @@ namespace AM_Client.Pages
         public Login()
         {
             InitializeComponent();
-
         }
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
@@ -35,9 +35,54 @@ namespace AM_Client.Pages
             string password = this.txtPassword.Password;
 
             //verify login
-            //transition to main form
-            NavigationService.GetNavigationService(this).Navigate(new Dashboard());
+            AuthService.AuthServiceClient client = new AuthServiceClient();
+            VerifyUserResponse response = client.VerifyUser(new VerifyUserRequest(username, password));
 
+            if (response.VerifyUserResult.success)
+            {
+                ClearMessageLabel();
+
+                //transition to main form
+                NavigationService.GetNavigationService(this).Navigate(new Dashboard());
+
+            }
+            else
+            {
+                SetMessageLabel("Invalid Username/Password Combination");
+
+            }
+        }
+
+        private void txtUsername_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ClearMessageLabel();
+        }
+
+        private void txtPassword_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            ClearMessageLabel();
+        }
+
+        /// <summary>
+        /// Sets Message
+        /// </summary>
+        /// <param name="message"></param>
+        private void SetMessageLabel(string message)
+        {
+            this.lblMessage.Visibility = Visibility.Visible;
+            this.lblMessage.Content = message;
+        }
+
+        /// <summary>
+        /// Clears out lblMessage contents
+        /// </summary>
+        private void ClearMessageLabel()
+        {
+            if (this.lblMessage.Visibility != Visibility.Hidden)
+            {
+                this.lblMessage.Visibility = Visibility.Hidden;
+                this.lblMessage.Content = String.Empty;
+            }
         }
     }
 }

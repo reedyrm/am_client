@@ -15,3 +15,5 @@ c:\users\gianni\documents\visual studio 2012\Projects\AM_Client\AM_Client\obj\De
 c:\users\gianni\documents\visual studio 2012\Projects\AM_Client\AM_Client\obj\Debug\Pages\Login.baml
 c:\users\gianni\documents\visual studio 2012\Projects\AM_Client\AM_Client\obj\Debug\Pages\Dashboard.g.cs
 c:\users\gianni\documents\visual studio 2012\Projects\AM_Client\AM_Client\obj\Debug\Pages\Login.g.cs
+C:\Users\gianni\Documents\Visual Studio 2012\Projects\AM_Client\AM_Client\obj\Debug\Pages\ChangePassword.baml
+C:\Users\gianni\Documents\Visual Studio 2012\Projects\AM_Client\AM_Client\obj\Debug\Pages\ChangePassword.g.cs
