@@ -8,7 +8,7 @@ using System.Windows;
 namespace AM_Client
 {
     /// <summary>
-    /// This class is to be used to store global
+    /// This class is to be used to store global items like current user
     /// </summary>
     public class AMClient
     {

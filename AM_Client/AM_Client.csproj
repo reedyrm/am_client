@@ -79,6 +79,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Service References\RealEstateService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -155,18 +160,34 @@
     <None Include="Service References\AuthService\AuthService2.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\RealEstateService\AM_Client.RealEstateService.GetListingsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RealEstateService\RealEstateService.wsdl" />
+    <None Include="Service References\RealEstateService\RealEstateService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RealEstateService\RealEstateService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RealEstateService\RealEstateService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Services\" />
+    <None Include="Service References\RealEstateService\RealEstateService.disco" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\AuthService\" />
+    <WCFMetadataStorage Include="Service References\RealEstateService\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\AuthService\AuthService.disco" />
@@ -202,6 +223,18 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\RealEstateService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\RealEstateService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\RealEstateService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

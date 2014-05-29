@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using AM_Client.Pages;
+using AM_Client.RealEstateService;
 
 namespace AM_Client
 {
@@ -35,6 +36,21 @@ namespace AM_Client
         private void miChangePassword_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.GetNavigationService(this).Navigate(new ChangePassword());
+        }
+
+        private void btnSearch_Click(object sender, RoutedEventArgs e)
+        {
+            string zipCode = this.txtZipCodeSearch.Text;
+
+            if (String.IsNullOrWhiteSpace(zipCode) && zipCode.Length != 5)
+            {
+                return;
+            }
+
+            RealEstateService.RealEstateServiceClient client = new RealEstateServiceClient();
+            GetListingsResponse response = client.GetListings(new GetListingsRequest(zipCode));
+
+            this.dgZipCodeSearchResults.ItemsSource = response.GetListingsResult;
         }
     }
 }

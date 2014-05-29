@@ -8,10 +8,6 @@
 	Title="Dashboard">
 
     <Grid Margin="0,60,0,0">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="137*"/>
-            <ColumnDefinition Width="436*"/>
-        </Grid.ColumnDefinitions>
         <Menu Height="31" VerticalAlignment="Top" Margin="0,-59,0,0" Grid.ColumnSpan="2">
             <MenuItem Header="File" Width="35">
                 <MenuItem x:Name="miChangePassword" Header="Change Password" Margin="0,0,-43,0" Click="miChangePassword_Click"/>
@@ -20,12 +16,17 @@
             </MenuItem>
             <MenuItem Header="About"/>
         </Menu>
-        <GridSplitter Height="348" VerticalAlignment="Top" Width="5" Grid.Column="1"/>
-        <TreeView Height="348" VerticalAlignment="Top">
-            <TreeViewItem Header="Root" IsExpanded="True">
-                <TreeViewItem Header="Child1" HorizontalAlignment="Left" Width="92"/>
-            </TreeViewItem>
-        </TreeView>
+        <Button x:Name="btnSearch" Content="Search" HorizontalAlignment="Left" Margin="139,11,0,0" VerticalAlignment="Top" Width="75" Click="btnSearch_Click"/>
+        <TextBox x:Name="txtZipCodeSearch" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <DataGrid Margin="10,47,0,0" RenderTransformOrigin="0.5,0.5" Name="dgZipCodeSearchResults" AutoGenerateColumns="False" AlternatingRowBackground="#c2ccdb" 
+                  HorizontalAlignment="Left" Width="553" Height="291" VerticalAlignment="Top" IsReadOnly="True" CanUserAddRows="False" SelectionMode="Single" SelectionUnit="Cell">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding ZillowId}" Header="Id" Width="80"/>
+                <DataGridTextColumn Binding="{Binding ZipCode}" Header="ZipCode" Width="80"/>
+                <DataGridTextColumn Binding="{Binding StreetName}" Header="StreetName" Width="200"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="btnClear" Content="Clear Results" HorizontalAlignment="Left" Margin="233,11,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </Page>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/AM_Backend.RealEstateService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/AM_Backend.RealEstateService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfRealEstateListing">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RealEstateListing" nillable="true" type="tns:RealEstateListing" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRealEstateListing" nillable="true" type="tns:ArrayOfRealEstateListing" />
+  <xs:complexType name="RealEstateListing">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HouseNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StreetName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ZillowId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RealEstateListing" nillable="true" type="tns:RealEstateListing" />
+</xs:schema>
